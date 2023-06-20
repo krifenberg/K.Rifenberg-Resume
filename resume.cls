@@ -120,10 +120,17 @@
 }
 
 \newkeycommand{\experienceItem}[company, position, location, duration]{
-    \textbf{\commandkey{company}\commandkey{location}: \commandkey{position}} \hfill {\commandkey{duration}}
+    \textbf{\commandkey{position} - \commandkey{company}} \hfill {\commandkey{duration}}
 }
 
-\newkeycommand{\customItem}[title, duration, keyHighlight]{
-    \textbf{\commandkey{title}} \hfill {\commandkey{duration}} \\
+\newkeycommand{\customItem}[title, organization, duration, keyHighlight]{
+    \textbf{\commandkey{title} - \commandkey{organization}} \hfill {\commandkey{duration}} \\
     \ifcommandkey{keyHighlight}{\commandkey{keyHighlight}}{}
+}
+
+\newkeycommand{\memberItem}[organization, duration]{
+    {\commandkey{organization}} \hfill {\commandkey{duration}} \\{}
+}
+\newkeycommand{\rewardItem}[reward, duration]{
+    {\commandkey{reward}} \hfill {\commandkey{duration}} \\{}    
 }
