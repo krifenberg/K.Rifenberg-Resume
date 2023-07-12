@@ -129,7 +129,7 @@
 }
 
 \newkeycommand{\memberItem}[organization, duration]{
-    {\commandkey{organization}} \hfill {\commandkey{duration}} \\{}
+   {\commandkey{organization}} \hfill {\commandkey{duration}} \\{}
 }
 \newkeycommand{\rewardItem}[reward, duration]{
     {\commandkey{reward}} \hfill {\commandkey{duration}} \\{}    
